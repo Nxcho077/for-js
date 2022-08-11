@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src ="https://unpkg.com/sweetalert/dist/sweetalert.min.js "></script>
+    <title>Formulario js</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <main>
+        <form action="" class="formulario" id="formulario">
+            <!-- Grupo: Usuario  -->
+            <div class="formulario__grupo " id="grupo__usuario">
+                <label for="usuario" class="formulario__label">Usuario</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="Ingrese Su Nombre">
+                        <i class=" formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 digitos y solo pude contener numero, letras y guion bajo.</p>
+            </div>
+            <!-- Grupo: Contraseña  -->
+            <div class="formulario__grupo" id="grupo__password2">
+                <label for="password2" class="formulario__label">Contraseña</label>
+                    <div class="formulario__grupo-input">
+                        <input type="password" class="formulario__input" name="password" id="password" placeholder="Ingrese Contraseña">
+                        <i class=" formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 digitos.</p>
+            </div>
+            <!-- Grupo: Correo Electronico  -->
+            <div class="formulario__grupo" id="grupo__correo">
+                <label for="correo" class="formulario__label">Correo Electronico</label>
+                    <div class="formulario__grupo-input">
+                        <input type="email" class="formulario__input" name="correo" id="correo" placeholder="Correo@correo.com">
+                        <i class=" formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="formulario__input-error">El correo solo puede contener leetras, numeros, puntos, guiones y guion bajo.</p>
+            </div>        
+              <!-- Grupo: Telefono  -->
+                      <div class="formulario__grupo" id="grupo__telefono">
+                        <label for="telefono" class="formulario__label">Telefono</label>
+                            <div class="formulario__grupo-input">
+                                <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="EJ: 1167*******">
+                                <i class=" formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                            </div>
+                            <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14.</p>
+                    </div> 
+            <!-- Grupo: Terminos y Condiciones  -->
+            <div class="formulario__grupo" id="grupo__terminos">
+                <label class="formulario__label">
+                    <input  class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                    Aceptos los Terminos y Condiciones
+                </label>
+            </div>
+            <div class="formulario__mensaje" id="formulario__mensaje">
+                <p><i class="fa-solid fa-triangle-exclamation"></i><b>Error:</b>Porfavor rellene el formulario</p>
+            </div>
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+                <input type="buttom" class="formulario__btn" id="btn" value="Enviar">
+                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+            </div>
+        </form>
+        <ul class="social-icons">
+            <p>Contactanos En:</p>
+            <li>
+                <a href="https://api.whatsapp.com/send?phone=01167911191&text=Hola, quiero comprar tu producto" style="color:lawngreen;" > <i class="fab fa-whatsapp"></i></a>
+            </li>
+            <li>
+                <a href="#" style="color: red ;"><i class="fab fa-instagram"></i></a>
+            </li>
+        </ul>
+
+    
+    </main>
+    <script src="js/formulario.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
